@@ -29,7 +29,7 @@ public class Davaleba_1 {
     @Test
     public void test() {
         driver.get("http://the-internet.herokuapp.com");
-        driver.findElement(By.xpath("//*[@id=\"content\"]/ul/li[20]/a")).click();
+        driver.findElement(By.linkText("Forgot Password")).click();
         WebElement email = driver.findElement(By.id("email"));
         email.sendKeys("Dato.vardiashvili2001@gmail.com");
         driver.findElement(By.id("form_submit")).click();
